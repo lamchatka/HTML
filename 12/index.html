@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML тег input и его вариации. Атрибут type, значения tel, email, password, url, search и другие</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="email">Email:</label>
+            <input id="email " type="email" name="user-name">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="url">Url:</label>
+            <input id="url " type="url" name="user-url">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="tel">tel:</label>
+            <input id="tel" type="tel" name="user-tel">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="search-query">search-query:</label>
+            <input id="search-query " type="search" name="user-search-query">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+
+    <form>
+        <p>
+            <label for="age">Age:</label>
+            <input id="age" type="number" name="user-age">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="password">password:</label>
+            <input id="password" type="password" name="user-password">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="full-date">
+                Введите дату в формате: месяц, день, год
+            </label>
+            <input type="date" id="full-date" name="fulldate">
+        </p>
+    </form>
+    <form>
+        <p>
+            <label for="full-date-with-time">
+                Введите дату в формате: месяц, день, год, время
+            </label>
+            <input type="datetime-local" id="full-date-with-time" name="full-date-with-time">
+        </p>
+    </form>
+
+    <p>
+        <label for="month-date">
+            Введите месяц:
+        </label>
+        <input type="month" id="month-date" name="month-date">
+    </p>
+
+    <p>
+        <label for="week-date">
+            Введите месяц:
+        </label>
+        <input type="week" id="week-date" name="week-date">
+    </p>
+
+    <p>
+        <label for="time-date">
+            Введите месяц:
+        </label>
+        <input type="time" id="time-date" name="time-date">
+    </p>
+
+    <p>
+        <label for="prefer-color">
+            Выберите цвет:
+        </label>
+        <input type="color" id="prefer-color" name="prefer-color">
+    </p>
+
+    <form>
+        <p>
+            <label for="form-file">
+
+                Выберите файл:
+            </label>
+        </p>
+        <p>
+            <input type="file" id="form-file" name="form-file">
+        </p>
+    </form>
+
+    <p>
+        <input type="checkbox" id="agremeent" name="agremeent value=" agremeent">
+        <label for="agremeent">
+            Я точно согласен с какими-то условиями
+        </label>
+
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>Ваш пол</legend>
+            <p>
+                <input id="male" type="radio" value="male" name="gender" checked />
+                <label for="male">Муж.</label>
+            </p>
+            <p>
+                <input id="female" type="radio" value="female" name="gender" />
+                <label for="female">Жен.</label>
+            </p>
+        </fieldset>
+    </form>
+
+    <p><label for="volume">Громкость звука от 1 до 100:</label></p>
+    <p><input id="volume" type="range" name="volume" min="1" max="100" /></p>
+
+</body>
+
+</html>
