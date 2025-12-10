@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+body > *:nth-child(1) > *:nth-child(2) ul {
+  display: flex;
+  column-gap: 30px;
+  list-style: none;
+}
+
+body > *:nth-child(1),
+body > *:nth-last-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px;
+  background-color: darkgray;
+}
+
+body > *:nth-child(2) {
+  display: grid;
+  grid-template-columns: 25% auto;
+  gap: 30px;
+  flex-grow: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+body > *:nth-child(2) > * {
+  padding: 20px;
+}
+
+body > *:nth-child(2) > *:nth-child(-n + 3) {
+  grid-column: 2 / 3;
+  background-color: #f6c2c2;
+}
+
+body > *:nth-child(2) > *:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+body > *:nth-child(2) > *:nth-child(1) > *:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+body > *:nth-child(2) > *:nth-child(1) > *:not(:nth-child(1)) {
+  padding: 10px;
+  background-color: #e2eefc;
+}
+
+body > *:nth-child(2) > *:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+body > *:nth-child(2) > *:nth-child(2) > *:nth-child(1) {
+  grid-column: -1 / 1;
+}
+
+body > *:nth-child(2) > *:nth-child(2) > *:not(:nth-child(1)) {
+  min-height: 50px;
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+
+body > *:nth-child(2) > *:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+body > *:nth-child(2) > *:last-child {
+  grid-row: -1 / 1;
+  height: 350px;
+  text-align: center;
+  background-color: #2eab8a;
+}
+
+h3 + div {
+  font-size: 0.7em;
+  margin-top: 5px;
+}
+
+header {
+    border: 5px dashed red;
+}
+
+footer {
+     border: 5px dashed black;
+}
+
+main {
+     border: 5px dashed blue;
+}
+
+section {
+    border: 5px dashed yellow;
+}
+
+article {
+    border: 5px dashed blueviolet;
+}
+
+aside {
+    border: 5px dashed pink;
+}
+
+nav {
+    border: 5px dashed orange;
+}

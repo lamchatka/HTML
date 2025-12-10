@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы в HTML. Теги textarea, select, option, optgroup</title>
+</head>
+
+<body>
+
+    <p>
+        <label for="comment">Ваш комментарий: </label>
+        <textarea id="comment">Это значение по умолчанию</textarea>
+    </p>
+
+
+    <p>
+        <label for="city">Выберите город:</label>
+        <select id="sity" multiple>
+            <option value="moscow">Москва</option>
+            <option value="krasnodar">Краснодар</option>
+            <option value="perm">Пермь</option>
+            <option value="saratov">Саратов</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="city">Выберите город:</label>
+        <select id="sity">
+            <option value="moscow">Москва</option>
+            <option value="krasnodar">Краснодар</option>
+            <option value="perm">Пермь</option>
+            <option value="saratov" selected>Саратов</option>
+        </select>
+    </p>
+
+    <form>
+        <label for="city">Выберите город:</label>
+        <select id="sity" required>
+            <option value="" disabled selected>Не выбран</option>
+            <option value="moscow">Москва</option>
+            <option value="krasnodar">Краснодар</option>
+            <option value="perm">Пермь</option>
+            <option value="saratov">Саратов</option>
+        </select>
+        <button>send</button>
+    </form>
+
+    <label for="city">Выберите город:</label>
+    <select id="sity" required>
+        <option value="" disabled selected>Не выбран</option>
+        <optgroup label="Первая пачка">
+            <option value="moscow">Москва</option>
+            <option value="krasnodar">Краснодар</option>
+        </optgroup>
+        <optgroup label="Вторая пачка">
+            <option value="perm">Пермь</option>
+            <option value="saratov">Саратов</option>
+        </optgroup>
+    </select>
+
+
+</body>
+
+</html>
